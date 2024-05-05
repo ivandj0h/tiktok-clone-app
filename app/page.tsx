@@ -1,3 +1,5 @@
+"use client"
+
 import MainLayout from "./layouts/MainLayout"
 
 const HomePage = () => {
