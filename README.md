@@ -1,6 +1,8 @@
 # Tiktok Clone App
 
-This is Project was Develop using `Node 18` and `NextJS 13`
+This is Project was Develop using `Node 20` and `NextJS 14`
+
+![image](/public/images/tiktok-logo.png)
 
 ## Getting Started
 

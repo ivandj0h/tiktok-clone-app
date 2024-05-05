@@ -9,6 +9,9 @@ const nextConfig = {
         if(!isServer) config.externals.push('canvas')
 
         return config
+    },
+    images:{
+        domains:['placehold.co']
     }
 };
 
