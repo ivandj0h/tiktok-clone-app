@@ -1,14 +1,11 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const ClientOnly = ({ children }: { children: React.ReactNode }) => {
-  const [isClient, setIsClient] = useState(false);
+export default function ClientOnly({ children }: { children: React.ReactNode }) {
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-  return <>{isClient ? <div>{children}</div> : null}</>;
+  const [isClient, setIsClient] = useState(false)
+  useEffect(() => { setIsClient(true) }, [])
+
+  return (<> {isClient ? <div>{children}</div> : null} </>);
 };
-
-export default ClientOnly;
